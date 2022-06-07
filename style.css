@@ -21,22 +21,15 @@
     padding: 20px;
     font-size: 50px;
     display: grid;
-    grid-template-rows: 60% 30%;
+    grid-template-rows: 90%;
     gap: 8%;
 }
 
-#result {
-    color: white;
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
-    /* border: 2px solid red; */
-}
-
 #operation {
+    padding-top: 2rem;
     color: white;
     text-align: end;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
     /* border: 2px solid blue; */
 }

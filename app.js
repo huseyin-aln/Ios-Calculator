@@ -19,16 +19,16 @@ const dot = document.querySelector(".row5-2");
 const equal = document.querySelector(".row5-3");
 
 AC.addEventListener("click", () => {
-    document.getElementById("result").innerText = "";
+    // document.getElementById("result").innerText = "";
     document.getElementById("operation").innerText = "";
 });
 
 plusMinus.addEventListener("click", () => {
-    document.getElementById("operation").innerText += "-";
+    document.getElementById("operation").innerText *= -1;
 });
 
 modulus.addEventListener("click", () => {
-    document.getElementById("operation").innerText += "%"
+    document.getElementById("operation").innerText /= 100;
 });
 
 division.addEventListener("click", () => {
@@ -48,7 +48,7 @@ nine.addEventListener("click", () => {
 });
 
 multiplication.addEventListener("click", () => {
-    document.getElementById("operation").innerText += "x"
+    document.getElementById("operation").innerText += "*"
 });
 
 four.addEventListener("click", () => {
@@ -96,5 +96,7 @@ equal.addEventListener("click", () => {
 
     document.getElementById("operation").innerText = process.toFixed(2);
 });
+
+
 
 
