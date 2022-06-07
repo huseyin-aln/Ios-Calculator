@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: black;
+    height: 600px;
+    width: 360px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.screen {
+    /* background-color: aqua; */
+    height: 165px;
+    width: 340px;
+    margin: auto;
+    padding: 20px;
+    font-size: 50px;
+    display: grid;
+    grid-template-rows: 60% 30%;
+    gap: 8%;
+}
+
+#result {
+    color: white;
+    font-size: 3rem;
+    overflow: hidden;
+    border: 2px solid red;
+}
+
+#operation {
+    color: white;
+    text-align: end;
+    font-size: 1.5rem;
+    border: 2px solid blue;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: 72px 72px 72px 72px;
+    grid-template-rows: 72px 72px 72px 72px 72px;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.keys .box button {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    font-size: 35px;
+}
+
+.box button {
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+.box button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.row1-1 button, .row1-2 button, .row1-3 button {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.row1-4 button, .row2-4 button, .row3-4 button, .row4-4 button, .row5-3 button {
+    background-color: #f1a33c;
+}
+
+.container .keys .row5-1 {
+    grid-row: 5/6;
+    grid-column: 1/3;
+}
+
+.container .keys .row5-1 button {
+    width: 154px;
+    border-radius: 36px;
+    text-align: left;
+    padding-left: 28px;
+}
+
