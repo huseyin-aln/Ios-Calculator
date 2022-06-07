@@ -20,6 +20,7 @@ const equal = document.querySelector(".row5-3");
 
 AC.addEventListener("click", () => {
     document.getElementById("result").innerText = "";
+    document.getElementById("operation").innerText = "";
 });
 
 plusMinus.addEventListener("click", () => {
@@ -44,6 +45,54 @@ eight.addEventListener("click", () => {
 
 nine.addEventListener("click", () => {
     document.getElementById("operation").innerText += "9"
+});
+
+multiplication.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "x"
+});
+
+four.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "4"
+});
+
+five.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "5"
+});
+
+six.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "6"
+});
+
+minus.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "-"
+});
+
+one.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "1"
+});
+
+two.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "2"
+});
+
+three.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "3"
+});
+
+plus.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "+"
+});
+
+zero.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "0"
+});
+
+dot.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "."
+});
+
+equal.addEventListener("click", () => {
+    document.getElementById("operation").innerText += "="
 });
 
 
