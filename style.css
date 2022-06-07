@@ -28,15 +28,17 @@
 #result {
     color: white;
     font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 #operation {
     color: white;
     text-align: end;
     font-size: 1.5rem;
-    border: 2px solid blue;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 2px solid blue; */
 }
 
 .keys {

@@ -32,7 +32,7 @@ modulus.addEventListener("click", () => {
 });
 
 division.addEventListener("click", () => {
-    document.getElementById("operation").innerText += "÷"
+    document.getElementById("operation").innerText += "/"
 });
 
 seven.addEventListener("click", () => {
@@ -92,7 +92,9 @@ dot.addEventListener("click", () => {
 });
 
 equal.addEventListener("click", () => {
-    document.getElementById("operation").innerText += "="
+    let process = eval(document.getElementById("operation").innerText);
+
+    document.getElementById("operation").innerText = process.toFixed(2);
 });
 
 
