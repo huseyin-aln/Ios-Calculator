@@ -21,16 +21,27 @@
     padding: 20px;
     font-size: 50px;
     display: grid;
-    grid-template-rows: 90%;
+    grid-template-rows: 60%; 30%
     gap: 8%;
 }
 
-#operation {
-    padding-top: 2rem;
+#screen-up {
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: end;
+    font-size: 1.5rem;
+    overflow: hidden;
+
+    /* border: 2px solid red; */
+}
+
+#screen-down {
+    padding: 2rem auto;
     color: white;
     text-align: end;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
+
     /* border: 2px solid blue; */
 }
 
@@ -47,30 +58,30 @@
     font-weight: 500;
 }
 
-.keys .box button {
+.keys button {
     width: 72px;
     height: 72px;
     border-radius: 50%;
     font-size: 35px;
 }
 
-.box button {
+.keys button {
     background-color: #333;
     color: white;
     border: none;
 }
 
-.box button:hover {
+.keys button:hover {
     cursor: pointer;
     opacity: 0.5;
 }
 
-.row1-1 button, .row1-2 button, .row1-3 button {
+.keys .row1-1, .keys .row1-2, .keys .row1-3 {
     background-color: #a5a5a5;
     color: black;
 }
 
-.row1-4 button, .row2-4 button, .row3-4 button, .row4-4 button, .row5-3 button {
+.keys .row1-4, .keys .row2-4, .keys .row3-4, .keys .row4-4, .box .row5-3 {
     background-color: #f1a33c;
 }
 
@@ -79,7 +90,7 @@
     grid-column: 1/3;
 }
 
-.container .keys .row5-1 button {
+.container .keys .row5-1 {
     width: 154px;
     border-radius: 36px;
     text-align: left;
