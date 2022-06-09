@@ -28,9 +28,25 @@ keys.addEventListener("click", (e) => {
 
     } else if (e.target.classList.contains("operations")) {
         screenUpSide.innerText = screenDownSide.innerText + " " + e.target.innerText;
+        screenDownSide.innerText = "";
 
     }  else if (e.target.classList.contains("equal")) {
         equal();
     }
 })
 
+const equal = function () {
+
+    if (screenUpSide.innerText.slice(-1) == "÷") {
+        screenDownSide.innerText = (screenUpSide.innerText.slice(0, -1) / screenDownSide.innerText).toFixed(2);
+
+    } else if (screenUpSide.innerText.slice(-1) == "x") {
+        screenDownSide.innerText = (screenUpSide.innerText.slice(0, -1) * screenDownSide.innerText).toFixed(2);
+
+    } else if (screenUpSide.innerText.slice(-1) == "+") {
+        screenDownSide.innerText = Number(screenUpSide.innerText.slice(0, -1)) + Number(screenDownSide.innerText);
+
+    } else if (screenUpSide.innerText.slice(-1) == "-") {
+        screenDownSide.innerText = screenUpSide.innerText.slice(0, -1) - screenDownSide.innerText;
+    }
+}
