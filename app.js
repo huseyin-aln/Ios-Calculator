@@ -26,6 +26,7 @@ keys.addEventListener("click", (e) => {
         }
         
     } else if (e.target.classList.contains("num")) {
+        
         screenDownSide.innerText += e.target.innerHTML;
         console.log(e.target.innerText);
 
@@ -33,7 +34,7 @@ keys.addEventListener("click", (e) => {
         if (!screenDownSide.innerText) {
             screenDownSide.innerText = "";
         }  else {
-            // equal();
+            equal();
             screenUpSide.innerText = screenDownSide.innerText + " " + e.target.innerText;
             screenDownSide.innerText = "";
         }
