@@ -52,7 +52,6 @@ keys.addEventListener("click", (e) => {
         
     } else if (e.target.classList.contains("equal")) {
         equal();
-
     } 
 })
 
