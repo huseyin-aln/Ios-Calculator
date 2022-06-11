@@ -26,9 +26,8 @@ keys.addEventListener("click", (e) => {
         }
         
     } else if (e.target.classList.contains("num")) {
-        
         screenDownSide.innerText += e.target.innerHTML;
-        console.log(e.target.innerText);
+
 
     } else if (e.target.classList.contains("operations")) {
         if (!screenDownSide.innerText) {
@@ -39,7 +38,7 @@ keys.addEventListener("click", (e) => {
             screenDownSide.innerText = "";
         }
         
-    }  else if (e.target.classList.contains("equal")) {
+    } else if (e.target.classList.contains("equal")) {
         equal();
     }
 })
@@ -58,4 +57,5 @@ const equal = function () {
     } else if (screenUpSide.innerText.slice(-1) == "-") {
         screenDownSide.innerText = screenUpSide.innerText.slice(0, -1) - screenDownSide.innerText;
     }
-}
+};
+
