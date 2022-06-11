@@ -26,6 +26,18 @@ keys.addEventListener("click", (e) => {
         }
         
     } else if (e.target.classList.contains("num")) {
+
+        if (screenDownSide.innerText === '0' && e.target.innerHTML === '0') return;
+
+        if (screenDownSide.innerText === '0' && e.target.innerHTML !== '.') {
+            screenDownSide.innerText = e.target.innerHTML;
+            return;
+        }
+
+        if (e.target.innerHTML === '.' && screenDownSide.innerText.includes('.')) return;
+
+        if (screenDownSide.innerText.length > 20) return;
+
         screenDownSide.innerText += e.target.innerHTML;
 
 
@@ -40,7 +52,8 @@ keys.addEventListener("click", (e) => {
         
     } else if (e.target.classList.contains("equal")) {
         equal();
-    }
+
+    } 
 })
 
 const equal = function () {
